@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperium Barber- Agendamentos de Barbearia</title>
+    <link rel="icon" href="img/barbearia.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Tela de Carregamento -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-scissors">
+        ✂️
+      </div>
+    </div>
+
+    <!-- Fundo Animado -->
+    <div class="bg-container" id="bgContainer">
+      <div class="particle-layer" id="particleLayer1"></div>
+      <div class="particle-layer" id="particleLayer2"></div>
+      <div class="particle-layer" id="particleLayer3"></div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          Imperium Barber
+        </div>
+  
+        <div class="nav-actions">
+          <a href="#home" class="nav-link">Início</a>
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#booking" class="nav-link">Agendar</a>
+          <a href="https://github.com/Guilhermesttt/ImperiumBarber" target="_blank" class="btn btn-download">
+            <i class="fab fa-github github-icon"></i> Dar uma estrela
+          </a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content" id="home">
+      <div class="hero" data-parallax="0.2">
+        <div class="hero-badge">Barbearia Premium</div>
+
+        <h1 class="hero-title">
+          Seu Estilo.<br />
+          <span
+            style="
+              background: linear-gradient(135deg, #daa520, #8b4513);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Nossa Arte.
+          </span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Agende seu horário de forma rápida e prática. Cortes clássicos e
+          modernos, barba bem feita e atendimento personalizado. Sua satisfação
+          é nossa prioridade.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="#booking" class="btn btn-primary">✂️ Agendar Horário</a>
+          <a href="#services" class="btn btn-secondary"> 📋 Ver Serviços </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Seção de Serviços -->
+    <section class="section" id="services" data-parallax="0.1">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Serviços</h2>
+          <p class="section-subtitle">
+            Cuidamos do seu visual com técnica e experiência
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>Corte Masculino</h3>
+            <p>
+              Cortes clássicos e modernos, sempre alinhados com seu estilo
+              pessoal. Técnicas profissionais para realçar seus traços.
+            </p>
+            <div class="service-price">R$ 35</div>
+            <div class="service-duration">⏱️ 30-40 minutos</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🪒</div>
+            <h3>Barba Completa</h3>
+            <p>
+              Aparar, modelar e finalizar com navalha. Incluí hidratação e
+              produtos específicos para deixar sua barba impecável.
+            </p>
+            <div class="service-price">R$ 25</div>
+            <div class="service-duration">⏱️ 20-30 minutos</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">💈</div>
+            <h3>Corte + Barba</h3>
+            <p>
+              Pacote completo com corte de cabelo e barba. O combo perfeito para
+              sair renovado e com visual impecável.
+            </p>
+            <div class="service-price">R$ 50</div>
+            <div class="service-duration">⏱️ 50-60 minutos</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🧒</div>
+            <h3>Corte Infantil</h3>
+            <p>
+              Atendimento especializado para crianças, com paciência e carinho.
+              Ambiente descontraído para os pequenos.
+            </p>
+            <div class="service-price">R$ 25</div>
+            <div class="service-duration">⏱️ 25-35 minutos</div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>Desenho na Barba</h3>
+            <p>
+              Desenhos personalizados e detalhados na barba. Arte e precisão
+              para quem quer um visual único e moderno.
+            </p>
+            <div class="service-price">R$ 20</div>
+            <div class="service-duration">⏱️ 15-20 minutos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Agendamento -->
+    <section class="section" id="booking" data-parallax="0.1">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Agende seu Horário</h2>
+          <p class="section-subtitle">
+            Escolha o melhor horário para você, é rápido e fácil
+          </p>
+        </div>
+
+        <div class="booking-form-container">
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <div class="form-group full-width-input">
+                <label class="form-label">Nome Completo</label>
+                <input
+                  type="text"
+                  id="clientName"
+                  class="form-input"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Serviço</label>
+                <select id="service" class="form-select" required>
+                  <option value="">Selecione um serviço</option>
+                  <option value="Corte Masculino">
+                    Corte Masculino - R$ 35
+                  </option>
+                  <option value="Barba Completa">Barba Completa - R$ 25</option>
+                  <option value="Corte + Barba">Corte + Barba - R$ 50</option>
+                  <option value="Tratamento Capilar">
+                    Tratamento Capilar - R$ 40
+                  </option>
+                  <option value="Corte Infantil">Corte Infantil - R$ 25</option>
+                  <option value="Desenho na Barba">
+                    Desenho na Barba - R$ 20
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Data</label>
+                <input
+                  type="date"
+                  id="appointmentDate"
+                  class="form-input"
+                  min=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group booking-time-slot">
+                <label class="form-label">Horário</label>
+                <div class="time-slot-filters">
+                  <button type="button" class="btn btn-secondary filter-btn active" data-filter="all">Todos</button>
+                  <button type="button" class="btn btn-secondary filter-btn" data-filter="morning">Manhã</button>
+                  <button type="button" class="btn btn-secondary filter-btn" data-filter="afternoon">Tarde</button>
+                </div>
+                <div class="time-slots" id="timeSlots">
+                  <p class="initial-message">Selecione uma data e um serviço para ver os horários disponíveis.</p>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary booking-submit">
+              Confirmar Agendamento
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
