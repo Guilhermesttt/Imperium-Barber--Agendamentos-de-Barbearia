@@ -6,6 +6,10 @@ Este projeto foi desenvolvido como parte da disciplina de **Algoritmo e Estrutur
 
 O Imperium Barber é um sistema de agendamento online para barbearias, desenvolvido para oferecer uma experiência de usuário fluida e eficiente. Ele permite que os clientes agendem serviços de forma rápida e prática, enquanto a barbearia pode gerenciar seus horários de maneira organizada.
 
+## Acessar o Projeto Online 🌐
+
+Você pode visualizar o projeto online através do GitHub Pages: [Imperium Barber - Agendamentos de Barbearia](https://guilhermesttt.github.io/Imperium-Barber--Agendamentos-de-Barbearia/)
+
 ## Funcionalidades ✨
 
 - **Tela de Carregamento:** Uma tela de carregamento animada com efeito de tesoura e transição suave. 🎬
