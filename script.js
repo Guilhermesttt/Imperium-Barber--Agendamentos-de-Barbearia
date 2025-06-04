@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function sendWhatsAppMessage(appointment) {
-        const adminPhoneNumber = '5582981159207';
+        const adminPhoneNumber = '5575988008504';
         const message = encodeURIComponent(
             `*🔔 Novo Agendamento! 🔔*\n\n` +
             `*👤 Nome:* ${appointment.name}\n` +
